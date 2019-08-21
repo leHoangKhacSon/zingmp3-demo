@@ -1,0 +1,171 @@
+.body {
+	font-family: sans-serif;
+}
+
+/*css cho dropdown menu*/
+.menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu li {
+	padding-right: 20px;
+}
+
+.menu li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu li a:hover {
+	color: #b840a7;	
+}
+
+.has-sub-menu {
+	position: relative;
+}
+
+.has-sub-menu:hover .sub-menu {
+	opacity: 1;
+	background-color: #EEE;
+}
+
+.sub-menu{
+	display: flex;
+	list-style: none;
+	padding: 0px;
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	top: 100%;
+}
+
+.sub-menu div li {
+	padding: 10px 5px;
+	width: 120px;
+}
+
+.sub-menu div .link-style:hover {
+	background-color: #CCC;
+}
+
+/*css cho component zing chart tuan - bai hat*/
+.weekly-item {
+	display: flex;
+	align-items: center;
+	padding: 12px 0;
+	border-bottom: 1px solid #EEE;
+}
+
+.weekly-item .number {
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+.weekly-item .info {
+	font-size: 14px;
+	flex-grow: 1;
+}
+
+.weekly-item .song-title {
+	margin-bottom: 10px;
+}
+
+.weekly-item .singer {
+	font-size: 12px;
+	color: #888;
+}
+
+.weekly-item .view-count {
+	font-size: 15px;
+	color: #888;
+}
+
+/*css cho component ablbum*/
+.album-item {
+	display: flex;
+	font-family: arial;
+	height: 128px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.album-item .album-cover {
+	height: 128px;
+	width: 128px;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+	font-size: 20px;
+}
+
+.album-item .album-cover .overlay {
+	height: 100%;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(146,160,184,0) 52%, rgba(186,192,222,1) 100%);
+	display: flex;
+	align-items: flex-end;
+	padding: 8px;
+	/*box-sizing lam cho padding khong thay doi size */
+	box-sizing: border-box;
+}
+
+.album-item .info-album {
+	flex-grow: 1;
+	padding-left: 10px;
+}
+
+.info-album .album-title {
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+.info-album .album-singer, .album-view {
+	font-size: 14px;
+	color: #888;
+}
+
+/*css cho aomponent playlist*/
+.play-list-item {
+	width: 128px;
+	font-family: arial;
+	font-size: 15px;
+	margin: 20px 10px;
+}
+.play-list-item .album {
+	height: 128px;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+}
+
+.play-list-item .album .overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 20%;
+	/*an di overlay*/
+	opacity: 0;
+	transition: all .5s;
+}
+
+.play-list-item .album:hover .overlay {
+	opacity: 1;
+	font-size: 100%;
+}
+
+.play-list-item a {
+	/*xoa gach chan duoi link*/
+	text-decoration: none;
+	color: #222;
+}
+
+.play-list-item a:hover {
+	color: #6c3d77;
+}
+
+
