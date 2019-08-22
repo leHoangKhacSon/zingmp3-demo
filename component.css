@@ -1,0 +1,217 @@
+.body {
+	font-family: sans-serif;
+}
+
+/*CSS CHO DROPDOWN MENU*/
+.menu {
+	list-style: none;
+	display: flex;
+	margin: 10px 0px;
+}
+
+.menu > li{
+	background-color: #EEE;
+	flex-grow: 1;
+	padding: 20px 15px;
+	border-bottom: 2px solid #b840a7;
+}
+
+/*bo gach chan va dat mau den cho link menu, link sub-menu, link play-list*/
+.menu > li > a, 
+.link-style a,
+.link-play-list a {
+	text-decoration: none;
+	color: #555;
+}
+
+.has-sub-menu {
+	position: relative;
+	padding: 0px 20px;
+}
+
+/*hieu ung khi an vao menu chinh*/
+.menu .has-sub-menu > a:hover {
+	color: #b840a7;	
+}
+
+/*sub-menu hien ra khi di chuot vao menu chinh*/
+.sub-menu {
+	display: flex;
+	list-style: none;
+	padding: 0px;
+	position: absolute;
+	opacity: 0;
+	left: 0px;
+	top: 100%;
+	border: 1px solid #DDD;
+	margin-top: 2px;
+}
+
+/*khi di chuot vao menu chinh thi sub-menu hien len*/
+.has-sub-menu:hover .sub-menu {
+	opacity: 1;
+	background-color: #FFF;
+}
+
+.sub-menu div li {
+	padding: 10px 15px;
+	width: 120px;
+	color: #000;
+}
+
+/*item cua sub-menu*/
+.sub-menu div .link-style {
+	font-size: 14px;
+	color: #000;
+}
+
+.sub-menu div .link-style:hover {
+	background-color: #EEE;	
+}
+
+.sub-menu div .link-style:hover a {
+	color: #b840a7;	
+}
+
+/*css cho component zing chart tuan - bai hat*/
+.weekly-item {
+	display: flex;
+	align-items: center;
+	padding: 12px 0;
+	border-bottom: 1px solid #EEE;
+}
+
+.weekly-item .number {
+	font-size: 20px;
+	padding: 0 10px;
+}
+
+.weekly-item .info {
+	font-size: 14px;
+	flex-grow: 1;
+}
+
+.weekly-item .song-title {
+	margin-bottom: 10px;
+}
+
+.weekly-item .singer {
+	font-size: 12px;
+	color: #888;
+}
+
+.weekly-item .view-count {
+	font-size: 15px;
+	color: #888;
+}
+
+/*css cho component ablbum*/
+.album-item {
+	display: flex;
+	font-family: arial;
+	height: 128px;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.album-item .album-cover {
+	height: 210px;
+	width: 210px;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	color: #FFF;
+	font-size: 20px;
+}
+
+.album-item .album-cover .overlay {
+	height: 100%;
+	background: rgb(2,0,36);
+	background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(146,160,184,0) 52%, rgba(186,192,222,1) 100%);
+	display: flex;
+	align-items: flex-end;
+	padding: 8px;
+	/*box-sizing lam cho padding khong thay doi size */
+	box-sizing: border-box;
+}
+
+.album-item .info-album {
+	flex-grow: 1;
+	padding-left: 10px;
+}
+
+.info-album .album-title {
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+.info-album .album-singer, .album-view {
+	font-size: 14px;
+	color: #888;
+}
+
+/*css cho aomponent playlist*/
+.play-list-item {
+	width: 210px;
+	font-family: arial;
+	font-size: 15px;
+	margin: 100px 10px;
+}
+
+.play-list-item .size-box {
+	height: 210px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.play-list-item .size-box .album {
+	height: 210px;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 10px;
+	transition: all 0.3s;
+}
+
+.play-list-item .size-box .album:hover {
+	transform: scale(1.2);
+}
+
+.play-list-item .size-box .album .overlay {
+	background-color: rgba(0, 0, 0, 0.3);
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*an di overlay*/
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.play-list-item .size-box .album:hover .overlay {
+	opacity: 1;
+}
+
+.play-list-item .size-box .album .overlay i {
+	transform: scale(0);
+	transition: all 0.3s;
+}
+
+.play-list-item .size-box .album:hover .overlay i {
+	transform: scale(1);
+}
+
+/*hieu ung khi click vao link-play-list*/
+.play-list-item a:hover {
+	color: #b840a7;	
+}
+
+.link-play-list {
+	padding-top: 10px;
+	font-weight: 700;
+}
+
+.overlay i {
+	color: #DDD;
+}
