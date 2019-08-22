@@ -3,46 +3,285 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>zingmp3</title>
+	<title>Zing Mp3</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="component.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
 </head>
 <body>
-	<!-- dropdown menu -->
-	<ul class="menu">
-		<li>TRANG CHỦ</li>
-		<li class="has-sub-menu">
-			<a href="#">#ZINGCHART</a>
-			<ul class="sub-menu">
-				<div>
-					<li>#ZINGCHART</li>
-					<li class="link-style"><a href="#">Bài hát</a></li>
-					<li class="link-style"><a href="">MV</a></li>
-				</div>
-				<div>
-					<li>TUẦN</li>
-					<li class="link-style"><a href="#">Bài hát</a></li>
-					<li class="link-style"><a href="">MV</a></li>
-				</div>
-				<div>
-					<li>US-UK CHART</li>
-					<li class="link-style"><a href="#">Bài hát</a></li>
-					<li class="link-style"><a href="">MV</a></li>
-				</div>
-				<div>
-					<li>KPOP-CHART</li>
-					<li class="link-style"><a href="#">Bài hát</a></li>
-					<li class="link-style"><a href="">MV</a></li>
-				</div>
+	<div class="wrapper">
+		<div class="header">
+				<!-- dropdown menu -->
+			<ul class="menu">
+				<li>TRANG CHỦ</li>
+				<li class="has-sub-menu">
+					<a href="#">#ZINGCHART</a>
+					<ul class="sub-menu">
+						<div>
+							<li>#ZINGCHART</li>
+							<li class="link-style"><a href="#">Bài hát</a></li>
+							<li class="link-style"><a href="">MV</a></li>
+						</div>
+						<div>
+							<li>TUẦN</li>
+							<li class="link-style"><a href="#">Bài hát</a></li>
+							<li class="link-style"><a href="">MV</a></li>
+						</div>
+						<div>
+							<li>US-UK CHART</li>
+							<li class="link-style"><a href="#">Bài hát</a></li>
+							<li class="link-style"><a href="">MV</a></li>
+						</div>
+						<div>
+							<li>KPOP-CHART</li>
+							<li class="link-style"><a href="#">Bài hát</a></li>
+							<li class="link-style"><a href="">MV</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<a href="#">TOP 100</a>
+					<ul class="sub-menu">
+						<div>
+							<li>VIỆT NAM</li>
+							<li class="link-style"><a href="#">Nhạc Trẻ</a></li>
+							<li class="link-style"><a href="">Nhạc Trữ Tình</a></li>
+							<li class="link-style"><a href="#">Quê Hương</a></li>
+							<li class="link-style"><a href="">Nhạc Cách Mạng</a></li>
+							<li class="link-style"><a href="#">Rap / Hip Hop Việt</a></li>
+							<li class="link-style"><a href="">Rock Việt</a></li>
+							<li class="link-style"><a href="#">Dance Việt</a></li>
+						</div>
+						<div>
+							<li>ÂU MỸ</li>
+							<li class="link-style"><a href="#">Pop</a></li>
+							<li class="link-style"><a href="">Rock</a></li>
+							<li class="link-style"><a href="#">Rap / Hip Hop</a></li>
+							<li class="link-style"><a href="">Country</a></li>
+							<li class="link-style"><a href="#">Electronic / Dance</a></li>
+							<li class="link-style"><a href="">R&B / Soul</a></li>
+							<li class="link-style"><a href="#">Audiophile</a></li>
+						</div>
+						<div>
+							<li>CHÂU Á</li>
+							<li class="link-style"><a href="#">Hàn Quốc</a></li>
+							<li class="link-style"><a href="">Nhật Bản</a></li>
+							<li class="link-style"><a href="">Hoa Ngữ</a></li>
+						</div>
+						<div>
+							<li>HÒA TẤU</li>
+							<li class="link-style"><a href="#">Classical</a></li>
+							<li class="link-style"><a href="#">Piano</a></li>
+							<li class="link-style"><a href="">Guitar</a></li>
+							<li class="link-style"><a href="#">Violin</a></li>
+							<li class="link-style"><a href="">Cello</a></li>
+							<li class="link-style"><a href="#">Saxophone</a></li>
+							<li class="link-style"><a href="">Nhạc Cụ Khác</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<a href="#">CHỦ ĐỀ</a>
+					<ul class="sub-menu">
+						<div>
+							<li>ĐỀ XUẤT</li>
+							<li class="link-style"><a href="#">Nhạc Hot</a></li>
+							<li class="link-style"><a href="">Những Bài Hit</a></li>
+							<li class="link-style"><a href="#">Nhạc Việt Bất Hủ</a></li>
+							<li class="link-style"><a href="">Nhạc Bất Hủ Âu Mỹ</a></li>
+							<li class="link-style"><a href="#">K-Pop Hit</a></li>
+							<li class="link-style"><a href="">Nhạc Thúy Nga</a></li>
+						</div>
+						<div>
+							<li>THỂ LOẠI</li>
+							<li class="link-style"><a href="#">EDM</a></li>
+							<li class="link-style"><a href="">Acoustic</a></li>
+							<li class="link-style"><a href="">Indie</a></li>
+							<li class="link-style"><a href="#">Nhạc Không Lời</a></li>
+							<li class="link-style"><a href="">Trữ Tình & Borelo</a></li>
+						</div>
+						<div>
+							<li>TÂM TRẠNG</li>
+							<li class="link-style"><a href="#">Những Ngày Mưa</a></li>
+							<li class="link-style"><a href="">Tình Yêu</a></li>
+							<li class="link-style"><a href="">Giai Điệu Buồn</a></li>
+							<li class="link-style"><a href="#">Âm Nhạc Thư Giãn</a></li>
+							<li class="link-style"><a href="">Motivation</a></li>
+						</div>
+						<div>
+							<li>HOẠT ĐỘNG</li>
+							<li class="link-style"><a href="#">Tập Trung</a></li>
+							<li class="link-style"><a href="">Spa - Yoga</a></li>
+							<li class="link-style"><a href="#">Cà Phê</a></li>
+							<li class="link-style"><a href="">Weekend</a></li>
+							<li class="link-style"><a href="#">Party</a></li>
+							<li class="link-style"><a href="">Du Lịch</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<a href="#">MV</a>
+					<ul class="sub-menu">
+						<div>
+							<li>VIỆT NAM</li>
+							<li class="link-style"><a href="#">Nhạc Trẻ</a></li>
+							<li class="link-style"><a href="">Nhạc Trữ Tình</a></li>
+							<li class="link-style"><a href="#">Dance Việt</a></li>
+							<li class="link-style"><a href="">Rock Việt</a></li>
+							<li class="link-style"><a href="#">Rap / Hip Hop Việt</a></li>
+							<li class="link-style"><a href="">Nhạc Trịnh</a></li>
+							<li class="link-style"><a href="">Nhạc Thiếu Nhi</a></li>
+						</div>
+						<div>
+							<li>ÂU MỸ</li>
+							<li class="link-style"><a href="#">Pop</a></li>
+							<li class="link-style"><a href="">Rock</a></li>
+							<li class="link-style"><a href="#">Rap / Hip Hop</a></li>
+							<li class="link-style"><a href="">Country</a></li>
+							<li class="link-style"><a href="#">Electronic / Dance</a></li>
+							<li class="link-style"><a href="">R&B / Soul</a></li>
+							<li class="link-style"><a href="#">Audiophile</a></li>
+						</div>
+						<div>
+							<li>CHÂU Á</li>
+							<li class="link-style"><a href="#">Hàn Quốc</a></li>
+							<li class="link-style"><a href="">Nhật Bản</a></li>
+							<li class="link-style"><a href="">Hoa Ngữ</a></li>
+							<li class="link-style"><a href="">Thái Lan</a></li>
+						</div>
+						<div>
+							<li>HÒA TẤU</li>
+							<li class="link-style"><a href="#">Classical</a></li>
+							<li class="link-style"><a href="#">Piano</a></li>
+							<li class="link-style"><a href="">Guitar</a></li>
+							<li class="link-style"><a href="#">Violin</a></li>
+							<li class="link-style"><a href="">Cello</a></li>
+							<li class="link-style"><a href="#">Saxophone</a></li>
+							<li class="link-style"><a href="">Nhạc Cụ Khác</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<a href="#">ALBUM</a>
+					<ul class="sub-menu">
+						<div>
+							<li>VIỆT NAM</li>
+							<li class="link-style"><a href="#">Nhạc Trẻ</a></li>
+							<li class="link-style"><a href="">Nhạc Trữ Tình</a></li>
+							<li class="link-style"><a href="#">Dance Việt</a></li>
+							<li class="link-style"><a href="">Rock Việt</a></li>
+							<li class="link-style"><a href="#">Rap / Hip Hop Việt</a></li>
+							<li class="link-style"><a href="">Nhạc Trịnh</a></li>
+							<li class="link-style"><a href="">Nhạc Thiếu Nhi</a></li>
+						</div>
+						<div>
+							<li>ÂU MỸ</li>
+							<li class="link-style"><a href="#">Pop</a></li>
+							<li class="link-style"><a href="">Rock</a></li>
+							<li class="link-style"><a href="#">Rap / Hip Hop</a></li>
+							<li class="link-style"><a href="">Country</a></li>
+							<li class="link-style"><a href="#">Electronic / Dance</a></li>
+							<li class="link-style"><a href="">R&B / Soul</a></li>
+							<li class="link-style"><a href="#">Audiophile</a></li>
+						</div>
+						<div>
+							<li>CHÂU Á</li>
+							<li class="link-style"><a href="#">Hàn Quốc</a></li>
+							<li class="link-style"><a href="">Nhật Bản</a></li>
+							<li class="link-style"><a href="">Hoa Ngữ</a></li>
+							<li class="link-style"><a href="">Thái Lan</a></li>
+						</div>
+						<div>
+							<li>HÒA TẤU</li>
+							<li class="link-style"><a href="#">Classical</a></li>
+							<li class="link-style"><a href="#">Piano</a></li>
+							<li class="link-style"><a href="">Guitar</a></li>
+							<li class="link-style"><a href="#">Violin</a></li>
+							<li class="link-style"><a href="">Cello</a></li>
+							<li class="link-style"><a href="#">Saxophone</a></li>
+							<li class="link-style"><a href="">Nhạc Cụ Khác</a></li>
+						</div>
+					</ul>
+				</li>
+				<li class="has-sub-menu">
+					<a href="#">NGHỆ SĨ</a>
+					<ul class="sub-menu">
+						<div>
+							<li class="link-style"><a href="#">Việt Nam</a></li>
+							<li class="link-style"><a href="">Âu Mỹ</a></li>
+							<li class="link-style"><a href="#">Nhật Bản</a></li>
+							<li class="link-style"><a href="">Hàn Quốc</a></li>
+							<li class="link-style"><a href="#">Hoa Ngữ</a></li>
+							<li class="link-style"><a href="">Hòa Tấu</a></li>
+						</div>
+					</ul>
+				</li>
+				<li>NHẠC CÁ NHÂN</li>
 			</ul>
-		</li>
-		<li>TOP 100</li>
-		<li>CHỦ ĐỀ</li>
-		<li>MV</li>
-		<li>ALBUM</li>
-		<li>NGHỆ SĨ</li>
-		<li>NHẠC CÁ NHÂN</li>
-	</ul>
+		</div>
+		<div class="main">
+				<!-- component playlist -->
+			<div class="play-list-item">
+				<div class="size-box">
+					<div class="album">
+						<div class="overlay">
+							<i class="far fa-play-circle fa-4x"></i>
+						</div>
+					</div>
+				</div>
+				<div class="link-play-list">
+					<a href="#">Nhạc Dành Cho Coder</a>
+				</div>
+			</div>
+
+				<!-- component playlist -->
+			<div class="play-list-item">
+				<div class="size-box">
+					<div class="album">
+						<div class="overlay">
+							<i class="far fa-play-circle fa-4x"></i>
+						</div>
+					</div>
+				</div>
+				
+				<div class="link-play-list">
+					<a href="#">Nhạc Dành Cho Coder</a>
+				</div>
+			</div>
+
+				<!-- component playlist -->
+			<div class="play-list-item">
+				<div class="size-box">
+					<div class="album">
+						<div class="overlay">
+							<i class="far fa-play-circle fa-4x"></i>
+						</div>
+					</div>
+				</div>
+				
+				<div class="link-play-list">
+					<a href="#">Nhạc Dành Cho Coder</a>
+				</div>
+			</div>
+
+				<!-- component playlist -->
+			<div class="play-list-item">
+				<div class="size-box">
+					<div class="album">
+						<div class="overlay">
+							<i class="far fa-play-circle fa-4x"></i>
+						</div>
+					</div>
+				</div>
+				
+				<div class="link-play-list">
+					<a href="#">Nhạc Dành Cho Coder</a>
+				</div>
+			</div>
+		</div>
+		<div class="footer">footer</div>
+	</div>
+
 	<!-- component zing chart tuan - bai hat -->
 	<div class="weekly-item">
 		<!-- xep hang -->
@@ -73,17 +312,7 @@
 		</div>
 	</div>
 
-	<!-- component playlist -->
-	<div class="play-list-item">
-		<div class="album">
-			<div class="overlay">
-				<i class="far fa-play-circle fa-3x"></i>
-			</div>
-		</div>
-		<div class="link-play-list">
-			<a href="#">nhac danh cho coder</a>
-		</div>
-	</div>
+
 
 </body>
 </html>
