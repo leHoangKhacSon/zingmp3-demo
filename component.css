@@ -6,14 +6,15 @@
 .menu {
 	list-style: none;
 	display: flex;
-	margin: 10px 0px;
+	margin: 10px 30px;
+	padding-left: 0px;
+	background-color: #EEE;
+	border-bottom: 2px solid #b840a7;
 }
 
 .menu > li{
-	background-color: #EEE;
 	flex-grow: 1;
 	padding: 20px 15px;
-	border-bottom: 2px solid #b840a7;
 }
 
 /*bo gach chan va dat mau den cho link menu, link sub-menu, link play-list*/
@@ -105,7 +106,7 @@
 	color: #888;
 }
 
-/*css cho component ablbum*/
+/*css cho component album*/
 .album-item {
 	display: flex;
 	font-family: arial;
@@ -150,7 +151,7 @@
 	color: #888;
 }
 
-/*css cho aomponent playlist*/
+/*css cho component playlist*/
 .play-list-item {
 	width: 210px;
 	font-family: arial;
@@ -158,11 +159,11 @@
 	margin: 100px 10px;
 }
 
-.play-list-item .size-box {
-	height: 210px;
-	box-sizing: border-box;
-	overflow: hidden;
-	border-radius: 5px;
+.play-list-item .size-box { 
+	height: 210px; 
+	box-sizing: border-box; 
+	overflow: hidden; 
+	border-radius: 5px; 
 }
 
 .play-list-item .size-box .album {
@@ -215,3 +216,168 @@
 .overlay i {
 	color: #DDD;
 }
+
+/*CSS COMPONENT ZINGCHART*/
+.box-chart {
+	margin-top: 100px;
+	height: 50px;
+	width: 200px;
+	box-sizing: border-box;
+	border-radius: 3px;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+
+.box-chart .pic-chart {
+	height: 100%;
+	background-image: url('../2.jpg');
+	border-radius: 3px;
+	background-size: cover;
+	background-position: center;
+}
+
+.box-chart:hover .pic-chart {
+	transform: scale(1.1);
+}
+
+/*CSS COMPONENT BAI HAT MOI*/
+.list-song {
+	height: 50px;
+	width: 400px;
+	margin: 50px 0px;
+	display: flex;
+	font-family: arial;
+}
+
+.list-song:hover {
+	background-color: #DDD;
+}
+/*css pic-song*/
+.list-song .pic-song {
+	height: 40px;
+	width: 40px;
+	background-image: url('../1.jpg');
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.list-song .pic-song .overlay {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.list-song:hover .pic-song .overlay {
+	opacity: 1;
+}
+/*css info-song*/
+.list-song .info-song {
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	flex-grow: 1;
+}
+
+.info-song .title-song {
+	font-weight: 700;
+	font-size: 15px;		
+}
+
+.info-song .singer-song {
+	font-size: 13px;
+	color: #888;
+	padding-top: 5px;
+}
+
+.list-song:hover .info-song .title-song {
+	color: #b840a7;	
+}
+/*css bonous-song*/
+.bonus-song i {
+	color: #333;
+	padding-right: 10px;
+	padding-top: 15px;
+	padding-left: 5px;
+	opacity: 0;
+	transition: all 0.1s;
+}
+
+.list-song:hover .bonus-song i {
+	opacity: 1;
+}
+
+.bonus-song i:hover {
+	color: #b840a7;
+}
+
+/*CSS COMPONENT SINGER */
+.info-singer {
+	height: 200px;
+	width: 200px;
+	background: #EEE;
+	position: relative;
+	font-family: arial;
+}
+
+.info-singer .box-singer {
+	width: 70%;
+	height: 70%;
+	border-radius: 50%;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: absolute;
+	left: 15%;
+	top: 15%;
+}
+
+.box-singer .pic-singer {
+	width: 100%;
+	height: 100%;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	transition: all 0.3s;
+}
+
+.box-singer .pic-singer .overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.info-singer .box-singer .pic-singer:hover {
+	transform: scale(1.2);
+}
+
+.box-singer:hover .pic-singer .overlay {
+	opacity: 1;
+}
+
+.info-singer .name-singer a {
+	text-decoration: none;
+	color: #000;
+	font-weight: 700;
+}
+
+.info-singer .name-singer {
+	position: absolute;
+	left: 20%;
+	top: 90%;
+}
+
+.name-singer a:hover {
+	color: #b840a7;
+}
+
+
+
+
+
