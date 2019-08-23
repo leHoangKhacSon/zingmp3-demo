@@ -156,7 +156,7 @@
 	width: 210px;
 	font-family: arial;
 	font-size: 15px;
-	margin: 100px 10px;
+	margin: 20px 10px;
 }
 
 .play-list-item .size-box { 
@@ -219,9 +219,9 @@
 
 /*CSS COMPONENT ZINGCHART*/
 .box-chart {
-	margin-top: 100px;
+	margin: 2%;
 	height: 50px;
-	width: 200px;
+	width: 20%;
 	box-sizing: border-box;
 	border-radius: 3px;
 	overflow: hidden;
@@ -243,8 +243,8 @@
 /*CSS COMPONENT BAI HAT MOI*/
 .list-song {
 	height: 50px;
-	width: 400px;
-	margin: 50px 0px;
+	width: 50%;
+	margin: 10px 0px;
 	display: flex;
 	font-family: arial;
 }
@@ -317,11 +317,12 @@
 
 /*CSS COMPONENT SINGER */
 .info-singer {
-	height: 200px;
-	width: 200px;
+	height: 180px;
+	width: 180px;
 	background: #EEE;
 	position: relative;
 	font-family: arial;
+	margin: 20px 15px;
 }
 
 .info-singer .box-singer {
@@ -375,6 +376,14 @@
 
 .name-singer a:hover {
 	color: #b840a7;
+}
+
+/*CSS CHO COMPONENT*/
+.component {
+	width: 100%;
+	display: flex;
+	border-bottom: 2px solid #DDD;
+	justify-content: center;
 }
 
 
