@@ -386,6 +386,108 @@
 	justify-content: center;
 }
 
+/*CSS COMPONENT THEME-KIND*/
+.theme-kind {
+	margin-top: 100px;
+	width: 210px;
+	height: 100px;
+	box-sizing: border-box;
+	position: relative;
+	overflow: hidden;
+}
+
+.theme-kind .pic-theme-kind {
+	background-image: url('../2.jpg');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	transition: all 0.3s;
+}
+
+.theme-kind p {
+	color: #FFF;
+	font-family: arial;
+	font-size: 18px;
+	font-weight: 700;
+	position: absolute;
+	left: 60px;
+	top: 40px;
+	transition: all 0.3s;
+}
+
+.theme-kind:hover p {
+	top: 30px;
+}
+
+.theme-kind:hover .pic-theme-kind {
+	transform: scale(1.1);
+}
+
+/*CSS COMPONENT MV-HOT*/
+.mv-hot {
+	font-family: arial;
+	font-size: 18px;
+	height: 100px;
+	width: 210px;
+	margin-top: 100px;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+}
+
+.mv-hot .pic-mv-hot {
+	height: 100%;
+	width: 100%;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	transition: all 0.3s;
+}
+
+.mv-hot .pic-mv-hot .overlay {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: all 0.3s;
+}
+
+.pic-mv-hot .overlay i {
+	position: absolute;
+	left: 70px;
+	top: 15px;
+}
+
+.info-mv-hot {
+	position: absolute;
+	left: 5px;
+	top: 55px;
+	transition: all 0.3s;
+}
+
+.name-mv-hot {
+	font-weight: 500;
+	color: #EEE;
+}
+
+.singer-mv-hot {
+	font-size: 14px;
+	color: #BBB;
+}
+
+.mv-hot:hover .pic-mv-hot {
+	transform: scale(1.1);
+}
+
+.mv-hot:hover .pic-mv-hot .overlay {
+	opacity: 1;
+}
+
+.mv-hot:hover .info-mv-hot {
+	opacity: 0;
+}
+
 
 
 
