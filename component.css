@@ -168,7 +168,7 @@
 
 .play-list-item .size-box .album {
 	height: 210px;
-	background-image: url('../2.jpg');
+	background-image: url('../5.jpg');
 	background-size: cover;
 	background-position: center;
 	margin-bottom: 10px;
@@ -230,7 +230,7 @@
 
 .box-chart .pic-chart {
 	height: 100%;
-	background-image: url('../2.jpg');
+	background-image: url('../8.jpg');
 	border-radius: 3px;
 	background-size: cover;
 	background-position: center;
@@ -339,7 +339,7 @@
 .box-singer .pic-singer {
 	width: 100%;
 	height: 100%;
-	background-image: url('../2.jpg');
+	background-image: url('../9.jpg');
 	background-size: cover;
 	background-position: center;
 	transition: all 0.3s;
@@ -398,7 +398,7 @@
 }
 
 .theme-kind .pic-theme-kind {
-	background-image: url('../2.jpg');
+	background-image: url('../6.jpg');
 	height: 100%;
 	width: 100%;
 	background-size: cover;
@@ -441,7 +441,7 @@
 .mv-hot .pic-mv-hot {
 	height: 100%;
 	width: 100%;
-	background-image: url('../2.jpg');
+	background-image: url('../4.jpg');
 	background-size: cover;
 	background-position: center;
 	transition: all 0.3s;
@@ -488,6 +488,88 @@
 
 .mv-hot:hover .info-mv-hot {
 	opacity: 0;
+}
+
+/*CSS COMPONENT IMAGE LOAD*/
+.image-load {
+	width: 100%;
+	background-image: url('../3.png');
+	height: 300px;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.image-load .img-load-1 {
+	width: 70px;
+	height: 70px;
+	background-image: url('../1.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+}
+
+.image-load .img-load-2 {
+	width: 70px;
+	height: 70px;
+	background-image: url('../2.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+}
+
+.image-load .img-load-3 {
+	width: 70px;
+	height: 70px;
+	background-image: url('../3.png');
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+}
+
+.image-load .img-load-4 {
+	width: 70px;
+	height: 70px;
+	background-image: url('../4.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+}
+
+.image-load .img-load-5 {
+	width: 70px;
+	height: 70px;
+	background-image: url('../5.jpg');
+	background-size: cover;
+	background-position: center;
+	margin: 10px;
+}
+
+
+.image-load .box-image-load:hover {
+	border: 2px solid #FFF;
+}
+
+.image-load .img-load-1:hover .image-load {
+	background-image: url('../1.jpg');
+}
+
+.image-load .img-load-2:hover .image-load {
+	background-image: url('../2.jpg');
+}
+
+.image-load .img-load-3:hover .image-load {
+	background-image: url('../3.png');
+}
+
+.image-load .img-load-4:hover .image-load {
+	background-image: url('../4.jpg');
+}
+
+.image-load .img-load-5:hover .image-load {
+	background-image: url('../5.jpg');
 }
 
 
