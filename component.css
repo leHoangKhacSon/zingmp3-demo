@@ -156,7 +156,7 @@
 	width: 210px;
 	font-family: arial;
 	font-size: 15px;
-	margin: 20px 10px;
+	margin: 50px 15px;
 }
 
 .play-list-item .size-box { 
@@ -319,10 +319,11 @@
 .info-singer {
 	height: 180px;
 	width: 180px;
-	background: #EEE;
+	background: #FFF;
 	position: relative;
 	font-family: arial;
-	margin: 20px 20px;
+	margin: 50px 30px;
+	border-radius: 5px;
 }
 
 .info-singer .box-singer {
@@ -384,11 +385,12 @@
 	display: flex;
 	border-bottom: 2px solid #DDD;
 	justify-content: center;
+	position: relative;
 }
 
 /*CSS COMPONENT THEME-KIND*/
 .theme-kind {
-	margin: 30px 20px;
+	margin: 50px 20px;
 	width: 210px;
 	height: 100px;
 	box-sizing: border-box;
@@ -431,7 +433,7 @@
 	font-size: 18px;
 	height: 100px;
 	width: 210px;
-	margin: 30px 20px;
+	margin: 50px 20px;
 	box-sizing: border-box;
 	overflow: hidden;
 	position: relative;
@@ -485,7 +487,7 @@
 .mv-hot:hover .pic-mv-hot .overlay {
 	opacity: 1;
 }
-
+D::d
 .mv-hot:hover .info-mv-hot {
 	opacity: 0;
 }
@@ -572,7 +574,27 @@
 	background-image: url('../5.jpg');
 }
 
+/*CSS COMPONENT TITLE COMPONENT */
+.title-component {
+	margin-top: 100px;
+	height: 20px;
+	width: 200px;
+	position: absolute;
+	left: 20px;
+	top: -80px;
+}
 
+.title-component a {
+	color: #555;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: arial;
+}
+
+.title-component a:hover {
+	color: #b840a7;
+}
 
 
 
