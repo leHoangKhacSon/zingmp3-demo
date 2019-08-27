@@ -596,5 +596,92 @@ D::d
 	color: #b840a7;
 }
 
+/*CSS COMPONENT FOOTER*/
+.footer-component {
+	margin: 50px 40px;
+	margin-top: 100px;
+}
+
+.footer-component a {
+	text-decoration: none;
+}
+
+.footer-link {
+	display: flex;
+	background-image: url('../8.jpg');
+	align-items: center;
+	background-size: cover;
+	background-position: center;
+	border-radius: 5px;
+}
+
+.footer-link p {
+	color: #FFF;
+	font-weight: 600;
+	font-family: arial;
+	font-size: 16px;
+}
+
+.footer-link .footer-login {
+	background-color: #e1e82b;
+	display: inline-block;
+	padding: 8px;
+	font-size: 15px;
+	margin-left: 120px;
+	border-radius: 5px;
+}
+
+.footer-login:hover {
+	background-color: #FFF;
+	color: #b840a7;
+}
+
+.footer-component img {
+	height: 40px;
+	width: 40px;
+	margin-left: 50px;
+	margin-right: 20px;
+}
+
+.footer-component .footer-support {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.footer-support img {
+	margin-right: 10px;
+}
+
+.footer-support p {
+	font-family: arial;
+	font-size: 13px;
+	color: #AAA;
+}
+
+.footer-component ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-component ul li {
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.footer-component a {
+	font-family: arial;
+	font-weight: 100;
+	color: #AAA;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.footer-component ul li a:hover {
+	color: #b840a7;
+}
 
 
