@@ -1,15 +1,20 @@
-.body {
+body {
 	font-family: sans-serif;
+	overflow-x: hidden;
+	background-color: #f8f9f5;
 }
 
 /*CSS CHO DROPDOWN MENU*/
 .menu {
 	list-style: none;
 	display: flex;
-	margin: 10px 30px;
+	margin: 10px 200px;
 	padding-left: 0px;
 	background-color: #EEE;
 	border-bottom: 2px solid #b840a7;
+	font-size: 14px;
+	font-weight: 700;
+	color: #AAA;
 }
 
 .menu > li{
@@ -22,7 +27,7 @@
 .link-style a,
 .link-play-list a {
 	text-decoration: none;
-	color: #555;
+	color: #AAA;
 }
 
 .has-sub-menu {
@@ -49,7 +54,7 @@
 }
 
 /*khi di chuot vao menu chinh thi sub-menu hien len*/
-.has-sub-menu:hover .sub-menu {
+.menu .has-sub-menu:hover .sub-menu {
 	opacity: 1;
 	background-color: #FFF;
 }
@@ -244,7 +249,7 @@
 .list-song {
 	height: 50px;
 	width: 50%;
-	margin: 10px 0px;
+	margin: 10px 50px;
 	display: flex;
 	font-family: arial;
 }
@@ -319,7 +324,7 @@
 .info-singer {
 	height: 180px;
 	width: 180px;
-	background: #FFF;
+	background: #f8f9f5;
 	position: relative;
 	font-family: arial;
 	margin: 50px 30px;
@@ -684,4 +689,64 @@ D::d
 	color: #b840a7;
 }
 
+/*CSS COMPONENT TOP-BAR*/
+.top-bar {
+	display: flex;
+	align-items: center;
+	background-color: #f8f9f5;
+}
 
+.top-bar .logo {
+	height: 100%;
+	width: 200px;
+	margin-left: 150px;
+	margin-right: 25px;
+}
+
+.logo img {
+	width: 180px;
+}
+
+.top-bar .box-search {
+	position: relative;
+	height: 50px;
+	font-size: 12px;
+	height: 100px;
+	flex-grow: 1;
+}
+
+.top-bar .box-search input {
+	width: 85%;
+	height: 40%;
+	margin-top: 30px;
+	border-radius: 5px;
+	border: 1px solid #DDD;
+}
+
+.top-bar .box-search i {
+	position: absolute;
+	left: 5px;
+	top: 39px;	
+	color: #666;
+}
+
+.top-bar .login {
+	height: 100%;
+	width: 150px;
+	display: flex;
+	align-items: center;
+	margin-right: 150px;
+}
+
+.top-bar .login a {
+	text-decoration: none;
+	color: #333;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.top-bar .login a:hover {
+	color: #b840a7;
+}

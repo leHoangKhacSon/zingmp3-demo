@@ -4,7 +4,12 @@
 	grid-template-columns: 1fr 4fr 1fr;
 }
 
-.header,
+.header {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+
+
 .main,
 .footer {
 	grid-column-start: 2;
