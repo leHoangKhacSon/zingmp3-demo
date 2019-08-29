@@ -8,18 +8,24 @@ body {
 .menu {
 	list-style: none;
 	display: flex;
-	margin: 10px 200px;
+	margin: 0px 200px;
 	padding-left: 0px;
 	background-color: #EEE;
-	border-bottom: 2px solid #b840a7;
+	/*border-bottom: 2px solid #b840a7;*/
 	font-size: 14px;
 	font-weight: 700;
 	color: #AAA;
+	padding-top: 10px;
+	height: 40px;
+}
+
+.menu .home {
+	border-bottom: 2px solid #b840a7;	
 }
 
 .menu > li{
 	flex-grow: 1;
-	padding: 20px 15px;
+	padding: 5px 15px;
 }
 
 /*bo gach chan va dat mau den cho link menu, link sub-menu, link play-list*/
@@ -51,12 +57,17 @@ body {
 	top: 100%;
 	border: 1px solid #DDD;
 	margin-top: 2px;
+	z-index: 1;
 }
 
 /*khi di chuot vao menu chinh thi sub-menu hien len*/
 .menu .has-sub-menu:hover .sub-menu {
 	opacity: 1;
 	background-color: #FFF;
+}
+
+.menu .has-sub-menu:hover {
+	border-bottom: 2px solid #b840a7;	
 }
 
 .sub-menu div li {
@@ -66,9 +77,10 @@ body {
 }
 
 /*item cua sub-menu*/
-.sub-menu div .link-style {
+.sub-menu div .link-style a {
 	font-size: 14px;
 	color: #000;
+	font-weight: 300;
 }
 
 .sub-menu div .link-style:hover {
@@ -492,7 +504,7 @@ body {
 .mv-hot:hover .pic-mv-hot .overlay {
 	opacity: 1;
 }
-D::d
+	
 .mv-hot:hover .info-mv-hot {
 	opacity: 0;
 }
@@ -694,17 +706,22 @@ D::d
 	display: flex;
 	align-items: center;
 	background-color: #f8f9f5;
+	height: 60px;
+	margin-top: 0px;
+	padding-bottom: 10px;
 }
 
 .top-bar .logo {
 	height: 100%;
 	width: 200px;
 	margin-left: 150px;
-	margin-right: 25px;
+	margin-right: 15px;
 }
 
 .logo img {
-	width: 180px;
+	padding-top: 10px;
+	padding-left: 40px;
+	width: 130px;
 }
 
 .top-bar .box-search {
